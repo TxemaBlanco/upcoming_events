@@ -12,6 +12,7 @@ import { LoginregisterComponent } from './Events/components/loginregister/loginr
 import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
 import { UpcomingEventsComponent } from '../app/Events/components/upcoming-events/upcoming-events.component';
 import { SliderComponent } from './Events/components/slider/slider.component';
+import { UserLoggedEventsComponent } from './events/components/user-logged-events/user-logged-events.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { SliderComponent } from './Events/components/slider/slider.component';
     CreateEventComponent,
 
     SliderComponent,
+      UserLoggedEventsComponent,
 
 
   
