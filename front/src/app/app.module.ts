@@ -12,12 +12,8 @@ import { LoginregisterComponent } from './Events/components/loginregister/loginr
 import { PageregisterComponent } from './Events/components/pageregister/pageregister.component';
 import { UpcomingEventsComponent } from '../app/Events/components/upcoming-events/upcoming-events.component';
 import { SliderComponent } from './Events/components/slider/slider.component';
-<<<<<<< HEAD
-import { UserLoggedEventsComponent } from './events/components/user-logged-events/user-logged-events.component';
-=======
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatPaginatorModule } from '@angular/material/paginator';
->>>>>>> 7c158bf6ee468162c4291427d39be3cc0ec27ac5
+import { UserLoggedEventsComponent} from './Events/components/user-logged-events/user-logged-events.component'
+
 
 
 @NgModule({
@@ -33,7 +29,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     CreateEventComponent,
 
     SliderComponent,
-      UserLoggedEventsComponent,
+    UserLoggedEventsComponent,
 
 
   
@@ -43,8 +39,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    MatPaginatorModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
