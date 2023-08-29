@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-logged-events.component.scss']
 })
 export class UserLoggedEventsComponent {
+upcomingEvents: any;
 
 }

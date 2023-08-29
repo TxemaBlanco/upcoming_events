@@ -1,12 +1,85 @@
 .container {
     display: grid;
+    width: 1440px;
+    height: 1024;
+
+    .elements2 {
+        display: grid;
+
+    }
 }
+
 .text1 {
-    font-size: 195px;
+    font-size: 50px;
     color: rgba(68, 243, 6, 1);
-    text-shadow: -0.063rem -0.063rem 0.063rem #FFFFFF, 0.125rem 0.125rem 0.125rem #FFFFFF, -0.063rem 0.063rem 0.063rem #FFFFFF, 0.063rem -0.063rem 0.063rem #FFFFFF;
+    text-shadow: -0.063rem -0.063rem 0.063rem #FFFFFF, 0.280rem 0.125rem 0.125rem #FFFFFF, -0.140rem 0.140rem 0.280rem #FFFFFF, 0.140rem -0.140rem 0.280rem #FFFFFF;
     vertical-align: center;
     text-align: center;
     font-family: 'Noto Serif', serif;
-    margin-top: 35%;
+    margin-top: 10%;
 }
+
+.text2 {
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    color: #FFFFFF;
+    margin-left: 900px;
+
+
+}
+
+.searchb {
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    border: solid rgba(68, 243, 6, 1) 2px;
+    margin-left: 875px;
+    box-shadow: 2px 2px 5px 2px white;
+}
+
+.button1 {
+    height: 50px;
+    width: 55px;
+    box-shadow: 2px 2px 5px 2px white;
+    background-color: rgba(68, 243, 6, 1);
+    border: solid 2px black;
+    border-radius: 20px 0px 0px 20px;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    margin-left: 10px;
+  
+    cursor: pointer;
+}
+
+.button2 {
+    height: 50px;
+    width: 55px;
+    box-shadow: 2px 2px 5px 2px white;
+    background-color: rgba(238, 115, 1, 1);
+    border: solid 2px black;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+margin-left: 65px;
+    
+    cursor: pointer;
+}
+button{
+    margin-top: -65px;
+
+}
+
+// .text5{
+//     font-size: 30px;
+//     font-family: 'Noto Serif', serif;
+//     color: #FFFFFF;
+//     margin-left: 2px; 
+// }

@@ -1,63 +1,23 @@
 <div class="container">
-  <div class="text1"><h1>User logged events</h1></div>
-  <body>
+    <div class="elements">
+        <div class="text1">
+            <p>User logged events</p>
+        </div>
+        <div class="elements2">
+            <p class="text2"><strong>Search Game</strong></p>
+            <form method="get" action="https://www.google.com/search">
+                <input class="searchb" type="search" name="q" placeholder="      Name...">
+            </form>
+            <p class="text5">Next Past</p>
+            <button class="button button1"><b class="text3">V</b></button>
+            <button class="button button2"><b class="text4">X</b></button>
 
-    <div class="container">
-      <h2>Filterable Table</h2>
-      <p>Type something in the input field to search the table for first names, last names or emails:</p>  
-      <input class="form-control" id="myInput" type="text" placeholder="Search..">
-      <br>
-      <table class="table table-bordered table-striped">
-        <thead>
-          <tr>
-            <th>Status</th>
-            <th>Event</th>
-            <th>Game</th>
-            <th>Date</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="myTable">
-          <tr>
-            <td>V</td>
-            <div *ngFor="let event of upcomingEvents" class="upcoming-event">
-                <div class="details-container">
-                  <h3>{{ event.title }}</h3>
-                  <p class="event-details">{{ event.idgame.name }}</p>
-                </div>
-            <td>john@example.com</td>
-          </tr>
-          <tr>
-            <td>V</td>
-            <td>Moe</td>
-            <td>mary@mail.com</td>
-          </tr>
-          <tr>
-            <td>V</td>
-            <td>Dooley</td>
-            <td>july@greatstuff.com</td>
-          </tr>
-          <tr>
-            <td>V</td>
-            <td>Ravendale</td>
-            <td>a_r@test.com</td>
-          </tr>
-        </tbody>
-      </table>
-      
-      
+        </div>
+        <div *ngFor="let event of upcomingEvents" class="upcoming-event">
+            <div class="details-container">
+                <h3>{{ event.title }}</h3>
+                <p class="event-details">{{ event.idgame.name }}</p>
+            </div>
+        </div>
     </div>
-    
-    <script>
-    $(document).ready(function(){
-      $("#myInput").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("#myTable tr").filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-      });
-    });
-    </script>
-    
-    </body>
 </div>
